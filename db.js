@@ -10,14 +10,6 @@ const pool = new pg.Pool({
     idleTimeoutMillis: 1000
 });
 
-// pool.connect((err, client) => {
-//     if (err) return console.log(err);
-//     client.query('SELECT * FROM "Product"', (errQuery, result) => {
-//         if (errQuery) return console.log(errQuery);
-//         console.log(result);
-//     });
-// });
-
 function queryDB(sql, cb) {
     pool.connect((err, client) => {
         if (err) return cb(err);
@@ -25,6 +17,4 @@ function queryDB(sql, cb) {
     });
 }
 
-queryDB('SELECT * FROM "Product"', (err, result) => {
-    console.log(result.rows);
-});
+module.exports = queryDB;

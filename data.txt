@@ -1,6 +1,0 @@
-INSERT INTO public."Product"(name, "desc", image, video)
-	VALUES ('Quisque at placerat leo', 'Proin pharetra lectus non neque gravida maximus. Sed a erat justo. Donec ac ultrices diam. Suspendisse dictum turpis id arcu pellentesque, sed laoreet leo blandit. In fermentum iaculis nisl ut maximus. Nunc rutrum eros nec interdum dictum.', '1.jpg', '222235865'),
-    ('Morbi vel vehicula felis', 'Nunc enim justo, finibus in sapien id, laoreet hendrerit ex. Sed blandit posuere ante, luctus commodo tellus. Nunc efficitur elit sed neque vehicula accumsan. Donec eleifend, felis eget laoreet efficitu.', '2.jpg', '218508470'),
-    ('Aliquam lobortis ligula vel', 'Integer egestas ultrices mi a efficitur. Duis vestibulum vitae nibh eget tempor. Suspendisse potenti. Ut euismod quis ipsum ut consectetur. Orci varius natoque penatibus et magnis dis parturient montes..', '3.jpg', '137094136'),
-    ('Aenean consectetur lacus non', 'Integer et enim a nulla aliquam mattis ac sit amet arcu. Donec sit amet tristique sapien. Duis posuere, ipsum nec sollicitudin laoreet.', '4.jpg', '221821296'),
-    ('Cras sit amet odio', 'Curabitur eu libero fermentum eros finibus rutrum. Nam non turpis ligula. Fusce ut nibh cursus turpis molestie porttitor. Pellentesque consequat massa enim, id pulvinar nisi volutpat in. itora torquent per conubia nostra, per inceptos.', '5.jpg', '221117048')
