@@ -16,3 +16,11 @@ app.get('/', (req, res) => {
         res.render('home', { arrProducts: result.rows });
     });
 });
+
+app.get('/addProduct', (req, res) => {
+    res.render('add');
+});
+
+app.post('/addProduct', (req, res) => {
+    
+});
