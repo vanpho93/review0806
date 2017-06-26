@@ -15,7 +15,7 @@ const limits = {
 
 const storage = multer.diskStorage({
     destination(req, file, cb) {
-        cb(null, './public');
+        cb(null, './public/images/background');
     },
     filename(req, file, cb) {
         cb(null, req.body.username + file.originalname);

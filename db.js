@@ -13,7 +13,7 @@ const pool = new pg.Pool({
 function queryDB(sql, cb) {
     pool.connect((err, client) => {
         if (err) return cb(err);
-        client.query('SELECT * FROM "Product"', cb);
+        client.query(sql, cb);
     });
 }
 
