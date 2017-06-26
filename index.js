@@ -12,6 +12,7 @@ app.listen(3000, () => console.log('Server started'));
 app.get('/', (req, res) => {
     queryDB('SELECT * FROM "Product"', (err, result) => {
         if (err) return res.send('LOI');
-        res.send(result.rows);
+        console.log(result.rows);
+        res.render('home', { arrProducts: result.rows });
     });
 });
