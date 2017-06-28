@@ -23,14 +23,21 @@
                 <td>Hinh</td>
                 <td>Mo ta</td>
                 <td>idVideo</td>
+                <td>Quan tri</td>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>asacs</td>
-                <td><img src="" /></td>
-                <td>safawefa</td>
-                <td>9288127382</td>
-            </tr>
+            <% arrProducts.forEach(e => { %>
+                <tr>
+                    <td><%= e.id %></td>
+                    <td><%= e.name %></td>
+                    <td><img src="images/background/<%= e.image %>" width="200"/></td>
+                    <td><%= e.desc %></td>
+                    <td><%= e.video %></td>
+                    <td>
+                        <a href="#">Xoa</a>
+                        <a href="#">Sua</a>
+                    </td>
+                </tr>
+            <% }); %>
         </table>
     </body>
 </html>
