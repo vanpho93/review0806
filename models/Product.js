@@ -28,12 +28,15 @@ class Product {
         queryDB(deleteSql, cb);    
     }
 
-    update() {
-
+    update(cb) {
+        const sql = `UPDATE public."Product"
+            SET name='${this.name}', "desc"='${this.desc}', image='${this.image}', video='${this.video}'
+            WHERE id = ${this.id};`;
+        queryDB(sql, cb);
     }
 }
 
 module.exports = Product;
 
-// const product = new Product(null, 'AAA', 'BBB', '1.jpg', '123121231');
-// product.add(err => console.log(err));
+// const product = new Product(11, 'DDDDDDD', 'BBB', '1.jpg', '123121231');
+// product.update(err => console.log(err));
