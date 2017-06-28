@@ -33,11 +33,12 @@
                     <td><%= e.desc %></td>
                     <td><%= e.video %></td>
                     <td>
-                        <a href="#">Xoa</a>
-                        <a href="#">Sua</a>
+                        <a onclick="return confirm('Are you sure?');" href="/xoa/<%= e.id %>" >Xoa</a>
+                        <a href="/xoa/<%= e.id %>">Sua</a>
                     </td>
                 </tr>
             <% }); %>
         </table>
     </body>
 </html>
+<!-- Xoa: localhost:3000/xoa/id
