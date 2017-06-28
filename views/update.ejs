@@ -9,6 +9,7 @@
     <body>
         <form action="/update" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="id" value="<%= product.id %>">
+            <input type="hidden" name="oldImage" value="<%= product.image %>">
             <input type="text" name="name" placeholder="name" value="<%= product.name %>">
             <br><br>
             <input type="text" name="desc" placeholder="description" value="<%= product.desc %>">
