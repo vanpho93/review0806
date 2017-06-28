@@ -35,3 +35,10 @@ app.post('/addProduct', (req, res) => {
         });
     });
 });
+
+app.get('/admin', (req, res) => {
+    queryDB('SELECT * FROM "Product"', (err, result) => {
+        if (err) return res.send('LOI');
+        res.render('admin', { arrProducts: result.rows });
+    });
+});
