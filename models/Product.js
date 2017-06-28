@@ -17,8 +17,10 @@ class Product {
         }); 
     }
 
-    add() {
-
+    add(cb) {
+        const sql = `INSERT INTO public."Product"(name, "desc", image, video)
+	    VALUES ('${this.name}', '${this.desc}', '${this.image}', '${this.video}');`;
+        queryDB(sql, cb);
     }
 
     remove(cb) {
@@ -33,5 +35,5 @@ class Product {
 
 module.exports = Product;
 
-// const product = new Product(3);
-// product.remove(err => console.log(err));
+// const product = new Product(null, 'AAA', 'BBB', '1.jpg', '123121231');
+// product.add(err => console.log(err));
