@@ -21,8 +21,9 @@ class Product {
 
     }
 
-    remove() {
-
+    remove(cb) {
+        const deleteSql = 'DELETE FROM "Product" WHERE id = ' + this.id;
+        queryDB(deleteSql, cb);    
     }
 
     update() {
@@ -31,3 +32,6 @@ class Product {
 }
 
 module.exports = Product;
+
+// const product = new Product(3);
+// product.remove(err => console.log(err));
