@@ -14,5 +14,5 @@ app.post('/addProduct', require('./controllers/addProductController'));
 app.get('/admin', require('./controllers/adminController'));
 app.get('/xoa/:id', require('./controllers/removeController'));
 app.get('/sua/:id', require('./controllers/updateViewController'));
-app.post('/update', require('/controllers/updateController'));
+app.post('/update', require('./controllers/updateController'));
 // app.get('/', (req, res) => res.send('server is running'));
